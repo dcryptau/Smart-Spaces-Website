@@ -1,0 +1,79 @@
+body{
+    overflow-y :scroll;
+}
+
+ul:not(.normallist) {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#36454f;
+}
+
+li:not(.normallist) {
+  float: left;
+}
+
+li:not(.normallist) a {
+  font-size:20;
+display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.normallist){
+  background-color: #5FC3E4;
+}
+
+.active {
+  background-color: #02AAB0;
+}
+
+ul:not(.normallist) {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50.00%;
+  padding:15px;
+}
+
+
+img:not(.logo)  {
+  border: 1px solid yellow;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+
+#gradient {
+  background-image: linear-gradient(to right,#780206, #061161);
+}
+#gradient2 {
+  background-image: linear-gradient(to left,#780206, #061161);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+b{text-decoration:underline;}
+
+h1{color:orange;
+font-family:courier;
+text-transform:uppercase;
+text-align:center;}
+
+div:not(.column):not(.row){display:inline-block;
+  padding:0px;
+  margin:0px;
+}
+

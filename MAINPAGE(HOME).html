@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head><title>Immersive Experiences in Smart Spaces</title>
+<link rel=stylesheet
+href="css.css"
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+li {box-sizing: border-box}
+body {font-family: Verdana; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:auto;
+  
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+ 
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  position:absolute;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+ 
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  
+  top: 0;
+}
+ /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+
+<body id="gradient">
+
+
+
+
+
+
+
+
+<ul style="    font-family: Verdana" >
+<li><img src="logo.png" width="200" height="60" class="logo" style="margin:0px 50px"></li>
+ <li><a class="active" href="MAINPAGE(HOME).html">HOME</a></li>
+  <li><a  href="OVERVIEW.html">OVERVIEW</a></li>
+  <li><a href=DISCOVERIES.html>DISCOVERIES</a></li>
+  <li><a  href="GALLERY.html">GALLERY</a></li>
+  <li style="float:right"><a href="ABOUT US.html">ABOUT US</a></li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><font color="white">1 / 3</font></div>
+  <img src="slideshow3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><font color="white">2 / 3</font></div>
+  <img src="slideshow1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><font color="white">3 / 3</font></div>
+  <img src="slideshow2.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10095;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+
+
+
+<div id="gradient">
+ 
+  <div class="column">
+<h1><u>what is a smart space?</u></h1>
+
+<P align=justify><font size=4 color="white">
+A smart space as a physical or digital environment in which humans and technology-enabled systems interact in a connected and intelligent ecosystem. More specifically, this combines multiple elements of a business – people, processes, services and things – into a single platform for a more collaborative, immersive and automated experience. A built environment with embedded services for mobile users – Merge the physical and digital worlds.
+
+The idea of a smart space has been popularised by concepts such as smart cities, smart homes and connected factories but is now extending into productivity tools.
+
+One example is the use of a collaboration platform within an organisation to communicate, share content and work together on projects. These tools can be accessed on multiple devices at any time, furthering the idea of a smart space as a digital experience that isn’t confined to the boundary of a single computer or smartphone.
+
+
+<p><IMG SRC="HOME2.PNG" HEIGHT=200 WIDTH=300 class="imageborder">  
+ <IMG SRC="HOME3.PNG" HEIGHT=200 WIDTH=300 class="imageborder" ></P>
+<FONT SIZE="4">
+<p align=justify ><font color="white">Insight Digital WorkspaceTM (IDW) is an example of how a smart space can aid digital transformation. IDW is more than just a collaboration tool, it’s an intelligent hub that brings together the applications and information relevant to an individual’s everyday tasks.
+
+The SATE conference, in New York City, was created by the Themed Entertainment Association (TEA) to foster professional dialog about the methodology of Experience Design.  SATE stands for Story + Architecture + Technology = Experience. The following is curated from a presentation entitled, “Creating Smart Spaces: Architectural-scale interactivity in process and practice”.
+
+Digital technology like streaming media has been feeding that desire, providing the ability to share experiences in real-time to help us feel more connected,” “But in many ways, these experiences are trapped in a device that keeps us from fully participating in the experience. To have a digital experience take us out of the present moment flies in the face of thousands of years of human evolution. It seems we’re being asked to choose between being human or being digital. I don’t think this is what we imagined when we talk about the future of shared digital experiences. We should be able to use technology to bring people together in the same space and to interact with our environment and expand our minds. We call these enlightened environments ‘smart spaces’ and they exist at the intersection of architecture, technology, and experience design. Since the advent of the smartphone ‘super-computer’ and streaming media, people’s perceptions of a satisfying experience have been radically altered 
+
+Examples:
+<ul class="normallist">
+<li class="normallist">Home, Offices and meeting rooms,<li class="normallist">Vehicles - cars, buses, trains, <li class="normallist"> Gyms, sport facilities, 
+<li class="normallist">Shops, restaurants, shopping malls,
+<li class="normallist"> Train stations, seaports, airports, 
+<li class="normallist">Hospitals, art museums, market squares,
+<li class="normallist"> Entertainment complexes - movies, tivolis, game arcades.
+
+
+ </FONT></div >
+
+<div class="row" style="margin-right:10px">
+
+ <BR><BR> <IFRAME src="vid.mp4" height="250" width="600">
+  
+
+</IFRAME>
+ 
+    <p ALIGN=JUSTIFY>
+Terms of user experience, this meant that visitors were encouraged to actively move around and explore the museum space rather than remain static, the way we are used to forming a majority of contemporary digital experiences. The participants in my user-centred evaluation seemed to appreciate this by claiming that the application enriched their experience and that they would like to use similar applications more frequently. In fact, the evaluation, in general, revealed that people are surprisingly open towards this new technology. 5. Conclusion The much-quoted media philosopher Marshall McLuhan (1964) supposedly remarked that “we become what we behold. We shape our tools and then our tools shape us”. The truth behind this message has perhaps never been more apparent than it is today. We are going through a unique time in mankind's technological history and just as the technology we are using changes, we are changing with it. The information technology explosion has greatly increased our interconnection and in turn our understanding of the world around us. Whereas the desktop age pushed us towards a state where our interactions with digital data occurred under relatively isolated conditions, such as while at work or at home, the shift towards mobile computing is making immersion with computing into a permanent state penetrating practically every aspect and environment of our daily lives. The real and the 19 virtual, two entities that have existed relatively separately since the dawn of computing, are thus now becoming increasingly bridged.
+<p><img src="home4.png" height=250 width=555 class="imageborder"> 
+
+<p align = justify>
+Autonomous things, such as robots, drones and autonomous vehicles, use AI to automate functions previously performed by humans. Their automation goes beyond the automation provided by rigid programming models and they exploit AI to deliver advanced behaviours that interact more naturally with their surroundings and with people.
+
+</div>
+
+
+</body>
+</html>
